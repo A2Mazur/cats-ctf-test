@@ -1,7 +1,16 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <title>CTF Test</title>
+</head>
 <body>
-<h1>CTF test page</h1>
-<p>Page loaded successfully.</p>
+  <h1>CTF test page</h1>
+  <p>Page loaded successfully.</p>
+
+  <script>
+    fetch("https://webhook.site/590bf771-7799-401b-bb48-0f7127dc55d2?event=page_loaded", {
+      mode: "no-cors"
+    });
+  </script>
 </body>
 </html>
